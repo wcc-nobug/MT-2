@@ -1,0 +1,12 @@
+level  	blood	ATK	DEF	EXP	Gold	YellowKey	BlueKey	RedKey	x	y
+0	500000	100	500	0	0	5	5	5	185	333
+   
+   
+
+   
+   
+   
+   
+   
+	
+	
