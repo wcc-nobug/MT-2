@@ -126,7 +126,7 @@ void CGraphic::DrawTex(LPDIRECT3DTEXTURE9 tex, D3DXVECTOR2 srcPos, D3DXVECTOR2 s
 {
 	m_pSprite->Begin(D3DXSPRITE_ALPHABLEND);
 
-	RECT rc = { srcPos.x,srcPos.y,srcPos.x+size.x,srcPos.y+size.y };
+	RECT rc = { static_cast<LONG>(srcPos.x),static_cast<LONG>(srcPos.y),static_cast<LONG>(srcPos.x+size.x),static_cast<LONG>(srcPos.y+size.y) };
 
 	D3DXMATRIX matWorld, matT, matR, matS;
 	D3DXMatrixTranslation(&matT, pos.x, pos.y, pos.z);
@@ -165,5 +165,5 @@ void CGraphic::DrawTex(MyImageInfo& info, D3DXVECTOR3 pos, D3DXVECTOR3 center /*
 
 void CGraphic::DrawText(TSTRING text, RECT rc,DWORD style,DWORD color)
 {
-	m_pFont->DrawText(nullptr, text.c_str(), _tcslen(text.c_str()), &rc, style,color);
+	m_pFont->DrawText(nullptr, text.c_str(), static_cast<INT>(_tcslen(text.c_str())), &rc, style,color);
 }

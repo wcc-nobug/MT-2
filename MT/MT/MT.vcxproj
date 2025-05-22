@@ -71,9 +71,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>../bin</OutDir>
-    <IntDir>../temp</IntDir>
-    <IncludePath>../../common;../../common/DX/include;$(IncludePath)</IncludePath>
+    <OutDir>../bin/</OutDir>
+    <IntDir>../temp/</IntDir>
+    <IncludePath>$(ProjectDir)..\..\common\DX\include;$(ProjectDir)..\..\common;$(IncludePath)</IncludePath>
     <LibraryPath>../../conmmon/DX/lib;$(LibraryPath)</LibraryPath>
     <ReferencePath>;$(ReferencePath)</ReferencePath>
     <SourcePath>../../common/DX/lib;$(SourcePath)</SourcePath>
