@@ -9,7 +9,6 @@
 #include <time.h>
 #include <stdlib.h>
 #include <tchar.h>
-#include <graphics.h>		// 引用图形库头文件
 #include <vector>
 #include <string>
 #include<d3d9.h>		//微软提供头文件
